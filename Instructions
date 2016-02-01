@@ -1,16 +1,22 @@
 /*
  *
- *      This module lets a user(test.py) to make a call to a C function using the 
- *	SWIG library.
+ *  This module lets a user make give call to the Content-based-storage module
  *	
- *	sudo apt-get install python-dev
+ *	pip install Flask
+ *	pip install flask-restful
  *	sudo apt-get install python3-dev
- * 	make
- *	python test.py
+ *
+ *  Server-side :-
+ *	python sample-rest.py 
+ * 
+ * 	Client-side :-
+ *	dd if=/dev/urandom of=file1.bin bs=64M count=16
+ *	dd if=/dev/urandom of=file2.bin bs=64M count=16
+ * 	curl -H "Content-type: application/octet-stream" -X POST http://127.0.0.1:5000/aaa --data-binary @file1.bin
+ *	curl -H "Content-type: application/octet-stream" -X POST http://127.0.0.1:5000/aaa --data-binary @file2.bin
  *	
- *	########################################################################
- *		We'll use this to convert the REST call to the IOCTL call for the 
- *	content based storage part  of our system. 
- *	########################################################################
  *
  */
+
+
+
