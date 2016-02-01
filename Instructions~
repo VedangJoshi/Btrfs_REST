@@ -6,7 +6,7 @@
  *	pip install flask-restful
  *	sudo apt-get install python3-dev
  *
- *	Server-side :-
+ *  Server-side :-
  *	python sample-rest.py 
  * 
  * 	Client-side :-
